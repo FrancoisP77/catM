@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>CAT MASH</h1>
+
+    <div class="row align-items-center justify-content-center">
+
+      <!-- We may want to add a placeholder when loading for better user experience -->
+      <div class="col-sm" *ngFor="let cat of randomcatMash">
+        <app-catdetails
+            [currentCat]="cat"
+            (voteClicked)="voteClicked($event)"
+        />
+      </div>
+      <div class="footer">
+          <button type="button" 
+                  class="btn btn-light border-dark rounded-0 border-bottom-0"
+                  routerLink="/catScores">
+                  <div class="button-content">
+                    Voir les plus beaux chats
+                  </div>
+                  <div class="button-legend">
+                    {{totalVotes}} votes
+                  </div>
+                  </button>
+      </div>
+    </div>
+</div>

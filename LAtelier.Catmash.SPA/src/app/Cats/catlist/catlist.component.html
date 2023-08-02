@@ -1,0 +1,15 @@
+<button class="btn btn-primary" routerLink="/"> < </button>
+
+<div class="container">
+    <div class="row text-center" *ngFor="let cat of allCats">
+        <div class="col-sm">
+            <div class="vote-label">
+                {{cat.totalVotes}} votes
+            </div>
+            <div class="image-container">
+                <img [src]="cat.imageUrl"
+                     class="rounded-circle border border-primary">
+            </div>
+        </div>
+    </div>
+</div>

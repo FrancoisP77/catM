@@ -1,0 +1,17 @@
+div.image-container{
+    margin-bottom: 50px;
+}
+
+div.vote-label {
+    font-size: 2em;
+}
+
+.btn {
+    font-size: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img {
+    height: 200px;
+}
